@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.button {
+  @apply rounded-[34px] text-white text-[16px] py-[5px] px-[20px]
+    bg-gradient-to-r from-cyan-500 to-blue-500 shadow-2xl shadow-current
+    font-bold md:text-[20px] md:py-[8px] md:px-[24px];
+}
+
+.button:hover {
+  @apply bg-gradient-to-l from-cyan-500 to-blue-500 cursor-pointer;
+}
+
+.blue-blur {
+  @apply absolute w-48 h-48 md:w-96 md:h-96 rounded-[50%] blur-[120px] -z-[9] bg-[#c1f5ff];
+}
+.pink-blur {
+  @apply absolute w-48 h-48 md:w-96 md:h-96 rounded-[50%] blur-[120px] -z-[9] bg-[#edd0ff];
+}
+
+.circle {
+  @apply w-[4.5rem] h-[4.5rem] bg-white rounded-[100%] relative flex items-center 
+  justify-center text-[1.3rem] font-bold mb-8 text-black border-[7px] border-cyan-500;
+}
+
+.main-circle {
+  @apply relative w-60 h-60 md:h-[25rem] md:w-[25rem] top-16 m-auto rounded-full shadow-2xl bg-white [&>*]:absolute lg:left-60;
+}
+
+.sec-circle {
+  @apply w-16 h-16 md:h-24 md:w-24 border-[5px] border-solid border-[#ebebeb] absolute [&>*]:scale-[0.7]
+  rounded-full bg-white;
+}
