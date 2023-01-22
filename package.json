@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://sejarparvez.github.io/react_with_tailwind_03_portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@iconscout/react-unicons": "^1.1.6",
