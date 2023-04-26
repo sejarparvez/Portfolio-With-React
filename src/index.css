@@ -2,14 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-.button {
-  @apply rounded-[34px] text-white text-[16px] py-[5px] px-[20px]
-    bg-gradient-to-r from-cyan-500 to-blue-500 shadow-2xl shadow-current
-    font-bold md:text-[20px] md:py-[8px] md:px-[24px];
-}
-
-.button:hover {
-  @apply bg-gradient-to-l from-cyan-500 to-blue-500 cursor-pointer;
+.btn {
+  @apply text-white bg-gradient-to-r from-cyan-500 to-blue-500 font-bold hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 px-8 py-2 rounded-full;
 }
 
 .blue-blur {
@@ -31,4 +25,8 @@
 .sec-circle {
   @apply w-16 h-16 md:h-24 md:w-24 border-[5px] border-solid border-[#ebebeb] absolute [&>*]:scale-[0.7]
   rounded-full bg-white;
+}
+
+body {
+  @apply bg-slate-200 dark:bg-gray-800 text-black dark:text-white;
 }

@@ -1,26 +1,17 @@
-import React, { useContext } from "react";
 import { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { themeContext } from "../../Context";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusiccApp from "../../img/musicapp.png";
-import Sidebar from "../../img/sidebar.png";
-
+import Ecommerce from "../img/ecommerce.png";
+import HOC from "../img/hoc.png";
+import MusiccApp from "../img/musicapp.png";
+import Sidebar from "../img/sidebar.png";
 const Portfolio = () => {
-  let theme = useContext(themeContext);
-  let darkMode = theme.state.darkMode;
-
   return (
     <div
       className="flex items-center justify-center flex-col relative mt-40 md:mt-60"
       id="Portfolio"
     >
-      <span
-        className=" font-bold text-3xl md:text-5xl lg:text-6xl lg:mb-10"
-        style={{ color: darkMode ? "white" : "" }}
-      >
+      <span className=" font-bold text-3xl md:text-5xl lg:text-6xl lg:mb-10">
         Recent Projects
       </span>
 

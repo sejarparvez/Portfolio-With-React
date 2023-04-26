@@ -1,23 +1,15 @@
 import { motion } from "framer-motion";
-import React, { useContext } from "react";
 import { Link } from "react-scroll";
-import { themeContext } from "../../Context";
-import Amazon from "../../img/amazon.png";
-import Facebook from "../../img/Facebook.png";
-import Fiver from "../../img/fiverr.png";
-import Shopify from "../../img/Shopify.png";
-import Upwork from "../../img/Upwork.png";
+import Amazon from "../img/amazon.png";
+import Facebook from "../img/Facebook.png";
+import Fiver from "../img/fiverr.png";
+import Shopify from "../img/Shopify.png";
+import Upwork from "../img/Upwork.png";
 const Works = () => {
-  let theme = useContext(themeContext);
-  let darkMode = theme.state.darkMode;
-
   return (
-    <div className="flex flex-col md:pt-20 lg:flex-row lg:-mt-16">
+    <div className="flex flex-col md:pt-20 px-20 lg:flex-row lg:-mt-16">
       <div className="flex flex-col gap-2 lg:basis-[30rem] lg:mt-32">
-        <span
-          className=" text-3xl md:text-5xl font-bold"
-          style={{ color: darkMode ? "white" : "" }}
-        >
+        <span className=" text-3xl md:text-5xl font-bold">
           Works For All These
         </span>
         <span className=" text-3xl md:text-5xl text-cyan-500 font-bold">
