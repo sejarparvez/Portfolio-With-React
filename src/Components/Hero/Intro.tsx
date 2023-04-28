@@ -5,32 +5,33 @@ import Email from "@iconscout/react-unicons/icons/uil-mailbox";
 import Twitter from "@iconscout/react-unicons/icons/uil-twitter";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
-import Boy from "../img/boy.png";
-import Crown from "../img/crown.png";
-import Glassimoji from "../img/glassesimoji.png";
-import Thumbup from "../img/thumbup.png";
-import Vector1 from "../img/Vector1.png";
-import Vector2 from "../img/Vector2.png";
+import Boy from "../../img/boy.png";
+import Crown from "../../img/crown.png";
+import Glassimoji from "../../img/glassesimoji.png";
+import Thumbup from "../../img/thumbup.png";
+import Vector1 from "../../img/Vector1.png";
+import Vector2 from "../../img/Vector2.png";
+import Button from "../Common/Button";
 import FlotingDiv from "./FlotingDiv";
 
-const Intro = () => {
+export default function Intro() {
   let transition = { duration: 2, type: "spring" };
 
   return (
-    <div className="flex flex-col lg:flex-row  pt-8 h-screen mb-24 lg:mt-12 lg:mb-0 px-24">
+    <div className="flex flex-col lg:flex-row pt-8 mb-24 lg:mt-12 lg:mb-40 px-24">
       <div className="flex relative flex-1 flex-col gap-3 lg:mt-16">
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
           <span className="font-bold text-3xl md:text-5xl">Hey! I Am</span>
           <span className=" text-cyan-500 font-bold text-3xl md:text-5xl">
             SEJAR PARVEZ
           </span>
-          <span>
+          <span className="text-gray-800 dark:text-gray-300">
             Frontend Developer With High Level Of Experience In Web Designing
             And Development, Producing The Quality Work
           </span>
         </div>
         <Link spy={true} to="contact" smooth={true}>
-          <button className="button">Hire Me</button>
+          <Button Name="Hire Me" />
         </Link>
         <div className="flex pt-7 cursor-pointer gap-5 justify-center md:justify-start">
           <a
@@ -122,10 +123,8 @@ const Intro = () => {
           <FlotingDiv image={Thumbup} txt1="React" txt2="Developer" />
         </motion.div>
         <div className="blue-blur top-36 md:top-80"></div>
-        <div className="pink-blur left-36 -top-36 md:left-80"></div>
+        <div className="pink-blur left-36 -top-36 md:left-60"></div>
       </div>
     </div>
   );
-};
-
-export default Intro;
+}

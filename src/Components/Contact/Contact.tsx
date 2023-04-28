@@ -1,6 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useRef } from "react";
 import { toast, Toaster } from "react-hot-toast";
+import Button from "../Common/Button";
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
@@ -60,10 +61,10 @@ const Contact = () => {
             className="w-[18rem] h-16 md:h-24 p-2 md:w-[25rem] outline-none border-[2px] border-solid border-cyan-500 rounded-md text-md text-black"
             placeholder="Message"
           />
-          <input type="submit" value="Send Message" className="button" />
+          <Button Name="Send Message" />
         </form>
       </div>
-      <div className="blue-blur"></div>
+
       <Toaster />
     </div>
   );
