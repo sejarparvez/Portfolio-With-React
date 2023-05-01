@@ -8,8 +8,8 @@ import Sidebar from "../../img/sidebar.png";
 const Portfolio = () => {
   return (
     <div
-      className="flex items-center justify-center flex-col relative mt-40 md:mt-48 px-24"
-      id="Portfolio"
+      className="flex items-center justify-center flex-col relative mt-40 md:mt-48 md:px-24 px-4"
+      id="project"
     >
       <span className=" font-bold text-3xl md:text-5xl lg:text-6xl lg:mb-10">
         Recent Projects
@@ -30,7 +30,7 @@ const Portfolio = () => {
             slidesPerView: 1,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           1024: {
             slidesPerView: 2,

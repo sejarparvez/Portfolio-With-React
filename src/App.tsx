@@ -10,17 +10,15 @@ import Works from "./Components/Work/Works";
 
 export default function App() {
   return (
-    <div>
+    <div className=" overflow-hidden">
       <Navbar />
       <Intro />
       <Services />
       <Experience />
       <Works />
       <Portfolio />
-
       <Testimonial />
       <Contact />
-
       <Footer />
     </div>
   );

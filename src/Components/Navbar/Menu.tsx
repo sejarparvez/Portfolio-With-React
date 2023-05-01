@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-scroll";
 export default function Menu() {
   const [NavOpen, setNavOpen] = useState(false);
 
@@ -32,24 +32,32 @@ export default function Menu() {
         ></span>
       </div>
       <div
-        className={`fixed top-0 right-0 -z-10 h-screen w-full transform  bg-slate-300 transition duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 -z-10 h-screen w-full transform  bg-slate-300 dark:bg-slate-700 transition duration-300 ease-in-out ${
           NavOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="mt-28 flex flex-col items-center gap-4 text-xl [&>*]:cursor-pointer hover:[&>*]:text-cyan-500">
-          <span onClick={HandleClick}>Services</span>
+          <Link spy={true} to="services" smooth={true}>
+            <span onClick={HandleClick}>Services</span>
+          </Link>
 
-          <span onClick={HandleClick}>About</span>
-
-          <span onClick={HandleClick}>Portfolio</span>
-
-          <span onClick={HandleClick}>Testimonials</span>
-
-          <span onClick={HandleClick}>Contact</span>
-
-          <span className="btn" onClick={HandleClick}>
-            Hire Me
-          </span>
+          <Link spy={true} to="work" smooth={true}>
+            <span onClick={HandleClick}>Works</span>
+          </Link>
+          <Link spy={true} to="project" smooth={true}>
+            <span onClick={HandleClick}>Project</span>
+          </Link>
+          <Link spy={true} to="testimonial" smooth={true}>
+            <span onClick={HandleClick}>Testimonials</span>
+          </Link>
+          <Link spy={true} to="contact" smooth={true}>
+            <span
+              className="text-white bg-gradient-to-r from-cyan-500 to-blue-500 font-bold hover:bg-gradient-to-r hover:from-blue-500 hover:to-cyan-500 px-8 py-2 rounded-full"
+              onClick={HandleClick}
+            >
+              Hire Me
+            </span>
+          </Link>
         </div>
       </div>
     </div>

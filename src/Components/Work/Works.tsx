@@ -9,8 +9,11 @@ import Button from "../Common/Button";
 import WorkCircle from "./WorkCircle";
 const Works = () => {
   return (
-    <div className=" relative flex flex-col md:pt-20 px-20 lg:flex-row lg:-mt-16">
-      <div className="flex flex-col gap-2 lg:basis-[30rem] lg:mt-32">
+    <div
+      className=" relative flex flex-col md:pt-20 px-4 md:px-20 lg:flex-row lg:-mt-16"
+      id="work"
+    >
+      <div className="flex flex-col gap-2 lg:text-start md:text-center md:gap-4 lg:basis-[30rem] lg:mt-32">
         <span className=" text-3xl md:text-5xl font-bold">
           Works For All These
         </span>
@@ -30,9 +33,9 @@ const Works = () => {
 
       {/* Right Side */}
 
-      <div className="relative">
-        <div className=" h-48 w-48 md:h-80 md:w-80 bg-cyan-500 rounded-full absolute top-12 left-28 md:left-[17rem] lg:left-[23rem] "></div>
-        <div className=" h-48 w-48 md:h-80 md:w-80 bg-blue-500 rounded-full absolute top-28 left-28 md:left-[17rem] lg:left-[23rem] "></div>
+      <div className="relative md:mt-10 lg:mt-0">
+        <div className=" h-48 w-48 md:h-80 md:w-80 bg-cyan-500 rounded-full absolute top-12 left-32 md:left-[17rem] lg:left-[23rem] "></div>
+        <div className=" h-48 w-48 md:h-80 md:w-80 bg-blue-500 rounded-full absolute top-32 left-32 md:left-[17rem] lg:left-[23rem] "></div>
         <motion.div
           initial={{ rotate: 45 }}
           whileInView={{ rotate: 0 }}
@@ -56,8 +59,8 @@ const Works = () => {
           </div>
         </motion.div>
       </div>
-      <div className="blue-blur right-0 "></div>
-      <div className="pink-blur right-60 top-40 "></div>
+      <div className="blue-blur right-0 md:top-96 lg:top-60 "></div>
+      <div className="pink-blur right-60 md:right-80 top-40 md:top-96 lg:top-40"></div>
     </div>
   );
 };

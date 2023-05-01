@@ -33,10 +33,10 @@ const Testimonial = () => {
 
   return (
     <div
-      className="flex flex-col gap-12 py-12 items-center px-32 justify-center mt-16 relative md:mt-24"
-      id="Testimonial"
+      className="flex flex-col md:gap-12 py-12 items-center md:px-32 px-4  justify-center mt-16 relative md:mt-24"
+      id="testimonial"
     >
-      <div className=" items-center pb-12 [&>*]:text-3xl md:[&>*]:text-5xl lg:[&>*]:text-5xl [&>*]:font-bold">
+      <div className=" items-center pb-12 [&>*]:text-3xl md:[&>*]:text-5xl lg:[&>*]:text-5xl [&>*]:font-bold text-center">
         <span>Clients Always Get </span>
         <span className=" text-cyan-500">Exceptional Work </span>
         <span>From Me</span>
